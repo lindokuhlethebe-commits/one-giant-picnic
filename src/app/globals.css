@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F4F1EA;
+  --color-charcoal: #222222;
+  --color-terracotta: #D1603D;
+  --color-olive: #6B705C;
+  --color-sand: #E3DCD2;
+
+  --font-heading: var(--font-oswald);
+  --font-sans: var(--font-inter);
+
+  --shadow-hard: 8px 8px 0px 0px rgba(34,34,34,1);
+  --shadow-hard-sm: 4px 4px 0px 0px rgba(34,34,34,1);
+  --shadow-hard-hover: 12px 12px 0px 0px rgba(209,96,61,1);
+}
+
+@layer base {
+  * {
+    border-radius: 0 !important;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: var(--color-terracotta);
+    color: var(--color-cream);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream);
+    border-left: 2px solid var(--color-charcoal);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-charcoal);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-terracotta);
+  }
+}
+
+@layer components {
+  /* Custom underline for boutique feel */
+  .hover-underline {
+    position: relative;
+    text-decoration: none;
+  }
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
