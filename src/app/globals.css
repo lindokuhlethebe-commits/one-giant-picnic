@@ -70,4 +70,18 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  /* Interactive Brutalist Buttons */
+  .brutal-btn {
+    box-shadow: var(--shadow-hard);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+  .brutal-btn:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0px 0px rgba(34,34,34,1);
+  }
+  .brutal-btn:active {
+    transform: translate(8px, 8px);
+    box-shadow: 0px 0px 0px 0px rgba(34,34,34,1);
+  }
 }

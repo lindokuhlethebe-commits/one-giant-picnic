@@ -37,19 +37,19 @@ export default function About() {
             {/* Sharp collage effect */}
             <div className="border-4 border-charcoal bg-sand aspect-[4/5] relative z-10 shadow-hard">
               <Image
-                src="https://placehold.co/800x1000/6B705C/F4F1EA?text=Harare+Edition"
-                alt="Past Event"
+                src="/images/about_main_1789853810486.jpg"
+                alt="Harare Edition"
                 fill
-                className="object-cover"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 unoptimized
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 w-2/3 aspect-square border-4 border-charcoal bg-terracotta z-20 shadow-hard hidden md:block">
+            <div className="absolute -bottom-8 -left-8 w-2/3 aspect-square border-4 border-charcoal bg-terracotta z-20 shadow-hard hidden md:block group">
               <Image
-                src="https://placehold.co/600x600/D1603D/F4F1EA?text=Vibes"
+                src="/images/gallery_drinks_1789853901246.jpg"
                 alt="Picnic Vibes"
                 fill
-                className="object-cover grayscale mix-blend-multiply"
+                className="object-cover grayscale mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 transition-all duration-500"
                 unoptimized
               />
             </div>

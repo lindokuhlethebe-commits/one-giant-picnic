@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
+import { ConceptLink } from "@/components/ui/ConceptAction";
 
 export interface GalleryItem {
   _id: string;
@@ -9,11 +10,11 @@ export interface GalleryItem {
 }
 
 const fallbackGallery: GalleryItem[] = [
-  { _id: "1", imageUrl: "https://placehold.co/800x800/D1603D/F4F1EA?text=Crowd+Shot", caption: "Crowd" },
-  { _id: "2", imageUrl: "https://placehold.co/400x400/6B705C/F4F1EA?text=Fashion", caption: "Fashion" },
-  { _id: "3", imageUrl: "https://placehold.co/400x400/E3DCD2/222222?text=Drinks", caption: "Drinks" },
-  { _id: "4", imageUrl: "https://placehold.co/400x400/222222/F4F1EA?text=Stage", caption: "Stage" },
-  { _id: "5", imageUrl: "https://placehold.co/400x400/D1603D/222222?text=Sunset", caption: "Sunset" },
+  { _id: "1", imageUrl: "/images/gallery_crowd_1789853832234.jpg", caption: "Crowd" },
+  { _id: "2", imageUrl: "/images/gallery_fashion_1789853862461.jpg", caption: "Fashion" },
+  { _id: "3", imageUrl: "/images/gallery_drinks_1789853901246.jpg", caption: "Drinks" },
+  { _id: "4", imageUrl: "/images/gallery_stage_1789853992060.jpg", caption: "Stage" },
+  { _id: "5", imageUrl: "/images/gallery_sunset_1789853944289.jpg", caption: "Sunset" },
 ];
 
 async function getGalleryItems(): Promise<GalleryItem[]> {
@@ -48,12 +49,11 @@ export default async function Gallery() {
           <h2 className="text-5xl md:text-7xl font-heading font-bold uppercase tracking-tighter text-cream">
             The <span className="text-terracotta">Archive</span>
           </h2>
-          <Link
-            href="#"
+          <ConceptLink
             className="hidden md:block text-sand font-heading uppercase tracking-widest border-b-2 border-sand hover:text-terracotta hover:border-terracotta transition-colors"
           >
             View Full Gallery
-          </Link>
+          </ConceptLink>
         </div>
 
         {/* Sharp Masonry/Grid */}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
+import { ConceptLink } from "@/components/ui/ConceptAction";
 
 // Define the type we expect from Sanity
 export interface Artist {
@@ -146,12 +147,11 @@ export default async function Lineup() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link
-            href="#"
+          <ConceptLink
             className="inline-block border-b-2 border-terracotta text-terracotta font-heading uppercase font-bold tracking-widest pb-1 hover:text-cream hover:border-cream transition-colors"
           >
             Listen to the Official Spotify Playlist &#8594;
-          </Link>
+          </ConceptLink>
         </div>
       </div>
     </section>

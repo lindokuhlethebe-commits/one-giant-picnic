@@ -1,3 +1,7 @@
+"use client";
+
+import { triggerConceptAlert } from "@/components/ui/ConceptModal";
+
 export default function Tickets() {
   return (
     <section id="tickets" className="py-24 bg-sand border-b-4 border-charcoal">
@@ -70,7 +74,10 @@ export default function Tickets() {
                 <span className="mr-2 text-terracotta font-bold">&#10003;</span> BYO Picnic Blankets
               </li>
             </ul>
-            <button className="w-full py-4 bg-terracotta text-cream border-2 border-terracotta font-heading font-bold uppercase tracking-widest hover:bg-charcoal hover:border-charcoal transition-colors">
+            <button 
+              onClick={triggerConceptAlert}
+              className="w-full py-4 bg-terracotta text-cream border-2 border-terracotta font-heading font-bold uppercase tracking-widest hover:bg-charcoal hover:border-charcoal brutal-btn"
+            >
               Buy Now
             </button>
           </div>
@@ -100,7 +107,10 @@ export default function Tickets() {
                 <span className="mr-2 text-terracotta font-bold">&#10003;</span> Free Cooler Box Pass
               </li>
             </ul>
-            <button className="w-full py-4 bg-cream text-charcoal border-2 border-cream font-heading font-bold uppercase tracking-widest hover:bg-terracotta hover:border-terracotta hover:text-cream transition-colors">
+            <button 
+              onClick={triggerConceptAlert}
+              className="w-full py-4 bg-cream text-charcoal border-2 border-cream font-heading font-bold uppercase tracking-widest hover:bg-terracotta hover:border-terracotta hover:text-cream brutal-btn"
+            >
               Buy VIP
             </button>
           </div>
