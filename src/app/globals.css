@@ -13,6 +13,13 @@
   --shadow-hard: 8px 8px 0px 0px rgba(34,34,34,1);
   --shadow-hard-sm: 4px 4px 0px 0px rgba(34,34,34,1);
   --shadow-hard-hover: 12px 12px 0px 0px rgba(209,96,61,1);
+
+  --animate-marquee: marquee 20s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
 @layer base {

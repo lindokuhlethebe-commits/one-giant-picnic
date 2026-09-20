@@ -111,7 +111,7 @@ export default function Home() {
         </section>
 
         <footer className="bg-charcoal border-t-8 border-terracotta text-cream py-8 text-center font-heading uppercase font-bold tracking-widest text-sm">
-          <p>&copy; 2026 One Giant Picnic. <span className="text-terracotta">Bulawayo Edition.</span> All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} One Giant Picnic. All Rights Reserved.</p>
         </footer>
       </main>
     </PageWrapper>

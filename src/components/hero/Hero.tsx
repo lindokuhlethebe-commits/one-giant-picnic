@@ -23,12 +23,6 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center text-center mt-12 md:mt-0">
-        <div className="border-2 border-cream px-4 py-1 mb-8 inline-block">
-          <span className="font-heading uppercase tracking-widest text-sm md:text-base font-bold text-terracotta">
-            Bulawayo Edition
-          </span>
-        </div>
-
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold uppercase tracking-tighter leading-none mb-6 text-cream shadow-black drop-shadow-lg">
           One Giant <br />
           <span className="text-terracotta">Picnic</span>
@@ -36,10 +30,6 @@ export default function Hero() {
 
         <p className="mt-2 text-lg md:text-2xl font-heading uppercase tracking-wide text-sand mb-10 max-w-2xl mx-auto border-b-2 border-cream pb-6">
           Music. Food. Culture. Community.
-          <br />
-          <span className="text-base md:text-lg font-sans normal-case mt-4 block text-cream">
-            October 24, 2026 • Hillside Dams Conservancy
-          </span>
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 w-full max-w-lg">
